@@ -58,6 +58,16 @@ namespace FinControl.API.Data
             ConfigurarPromptPersonalizado(modelBuilder);
             ConfigurarConfiguracaoChat(modelBuilder);
             ConfigurarComandoChat(modelBuilder);
+
+            modelBuilder.Entity<Usuario>().HasData(new Usuario
+            {
+                Id = 1,
+                Nome = "Usuario Padrao",
+                Email = "admin@fincontrol.com",
+                SenhaHash = "hash_temporario",
+                DataCriacao = new DateTime(2025, 1, 1),
+                Ativo = true
+            });
         }
 
         private void ConfigurarUsuario(ModelBuilder modelBuilder)

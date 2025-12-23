@@ -1,19 +1,18 @@
 # FinControl - API
 
-Sistema de controle financeiro pessoal desenvolvido em ASP.NET Core (.NET 9) com Entity Framework Core.
+Backend do sistema de controle financeiro pessoal. Desenvolvido com .NET 9 e Entity Framework Core.
 
-## Status do Projeto
-- **Etapa 1 (Concluída):** Modelagem completa do domínio, relacionamentos e configuração do contexto de dados.
-
-## Tecnologias Utilizadas
-- .NET 9
+## Tecnologias
+- .NET 9 (ASP.NET Core)
 - Entity Framework Core
 - SQL Server
-- Ollama (Processamento de comandos locais)
+- Ollama (Comandos locais)
 
-## Estrutura do Projeto
-- `FinControl.API`: Projeto principal da API.
-- `FinControl.API/Models`: Entidades de domínio.
-- `FinControl.API/Enums`: Enumeradores do sistema.
-- `FinControl.API/Data`: Contexto do banco de dados e configurações Fluent API.
+## Estrutura
+- `Models/`: Entidades do banco de dados.
+- `Enums/`: Enumeradores de dominio.
+- `Data/`: Contexto do EF e configuracoes (Fluent API).
+- `DTOs/`: Objetos de transferencia de dados.
+- `Services/`: Logica de negocio.
+- `Controllers/`: Endpoints da API.
 
